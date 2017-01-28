@@ -1,0 +1,3 @@
+Siswa<\br><\br>
+
+Siswa dibagi 2 kelompok kelas yang masing - masing kelas dibatasi 30 orang. Sehingga jumlah total siswa adalah 360 siswa.<\br>

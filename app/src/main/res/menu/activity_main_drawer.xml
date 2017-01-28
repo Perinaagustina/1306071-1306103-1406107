@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:name="@string/menu_beranda"
+            android:title="@string/menu_beranda" />
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/nav_profil_menu">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_profil" />
+    </group>
+
+    <item android:title="@string/menu_kepegawaian">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_guru"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_pengajar" />
+            <item
+                android:id="@+id/nav_adm"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_adm" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_kesiswaan" android:checkableBehavior="single" >
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_siswa"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_siswa" />
+            </group>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single" android:id="@+id/nav_galery_menu">
+        <item
+            android:id="@+id/nav_galery"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_gallery" />
+    </group>
+
+</menu>

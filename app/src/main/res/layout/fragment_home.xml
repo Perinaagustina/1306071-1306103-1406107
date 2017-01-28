@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bnx.app.genmas.HomeFragment">
+
+    <ScrollView
+        android:id="@+id/home_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/home_app_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Name"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_title"/>
+
+            <TextView
+                android:id="@+id/home_app_motto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="App Name"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_below="@+id/home_app_title"
+                android:layout_marginBottom="@dimen/margin_10dp"/>
+
+            <TextView
+                android:id="@+id/home_company_nick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Short Name"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_title_sub"
+                android:gravity="center"
+                android:layout_below="@+id/home_company_motto"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:id="@+id/home_company_motto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Motto"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_below="@+id/home_logo"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/home_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/logo"
+                android:maxWidth="200dp"
+                android:maxHeight="200dp"
+                android:layout_below="@+id/home_app_motto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/home_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_title_sub"
+                android:gravity="center"
+                android:layout_below="@+id/home_company_nick"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
